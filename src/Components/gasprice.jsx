@@ -16,7 +16,7 @@ export default function GasPrice(props) {
   }[readyState];
 
   function generateDivs() {
-    console.log(JSON.parse(lastMessage.data).data);
+    // console.log(JSON.parse(lastMessage.data).data);
     return (
       <>
         <div className="gas-title">Gas Prices</div>

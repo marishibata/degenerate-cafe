@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./news.css";
-const axios = require("axios").default;
+const axios = require('axios').default;
 
 export default function News() {
   const [NewsData, setNewsData] = useState([]);
