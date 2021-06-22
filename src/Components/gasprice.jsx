@@ -24,6 +24,6 @@ export default function GasPrice(props) {
   }
 
   return (
-    <div class="par-gas">{!lastMessage ? <p>loading</p> : generateDivs()} </div>
+    <div className="par-gas">{!lastMessage ? <p>loading</p> : generateDivs()} </div>
   );
 }
