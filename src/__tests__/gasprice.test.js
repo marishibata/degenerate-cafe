@@ -6,10 +6,8 @@ import WS from 'jest-websocket-mock'
 
 let ws;
 beforeEach(() => {
-  ws = new WS('wss://www.gasnow.org/ws/gasprice');
-});
-afterEach(() => {
   WS.clean();
+  ws = new WS('wss://www.gasnow.org/ws/gasprice');
 });
 
 
@@ -18,7 +16,6 @@ describe('The Gas Price component', () => {
     const { findByText, debug } = render(<GasPrice/>);
     const result = await findByText('loading');
     expect(result).toBeTruthy();
-    await ws.connected;
     debug();
   })
 })
