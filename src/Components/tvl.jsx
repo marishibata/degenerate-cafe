@@ -10,6 +10,7 @@ export default function TVL() {
       method: "get",
       url: "https://api.llama.fi/protocols",
     }).then((data) => {
+      console.log(data);
       setTVLData(
         data.data.map((protocol) => (
           <div className="tvl-item" key={protocol.id}>
