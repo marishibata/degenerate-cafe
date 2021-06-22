@@ -10,15 +10,9 @@ export default function GasPrice(props) {
     return (
       <>
         <div className="gas-title">Gas Prices</div>
-        <div>
-          Fast: {Math.round(JSON.parse(lastMessage.data).data.fast / 10e8)}
-        </div>
-        <div>
-          Standard: {Math.round(JSON.parse(lastMessage.data).data.standard / 10e8)}
-        </div>
-        <div>
-          Slow: {Math.round(JSON.parse(lastMessage.data).data.slow / 10e8)}
-        </div>
+        <div>Fast: {Math.round(JSON.parse(lastMessage.data).data.fast / 10e8)}</div>
+        <div>Standard: {Math.round(JSON.parse(lastMessage.data).data.standard / 10e8)}</div>
+        <div>Slow: {Math.round(JSON.parse(lastMessage.data).data.slow / 10e8)}</div>
       </>
     );
   }

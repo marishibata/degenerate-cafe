@@ -17,5 +17,11 @@ describe('The Gas Price component', () => {
     const result = await findByText('loading');
     expect(result).toBeTruthy();
     debug();
-  })
+  });
+  it('renders the gas prices on screen after loading', async () => {
+    const { findByText } = render(<GasPrice/>);
+    const result = await findByText('Fast');
+    expect(result).toBeTruthy();
+  });
+
 })
