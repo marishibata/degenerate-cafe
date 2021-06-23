@@ -13,15 +13,13 @@ beforeEach(() => {
 
 describe('The Gas Price component', () => {
   it('renders loading before connection', async () => {
-    const { findByText, debug } = render(<GasPrice/>);
+    const { findByText } = render(<GasPrice/>);
     const result = await findByText('loading');
     expect(result).toBeTruthy();
-    debug();
   });
-  it('renders the gas prices on screen after loading', async () => {
-    const { findByText } = render(<GasPrice/>);
-    const result = await findByText('Fast');
-    expect(result).toBeTruthy();
+  it('renders the gas prices and then opens a websocket connection', async () => {
+    render(<GasPrice/>);
+    const connection = await ws.connected;
+    expect(connection.readyState).toEqual(1);
   });
-
-})
+});
