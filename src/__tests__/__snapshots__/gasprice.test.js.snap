@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Gas Price component Renders consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="par-gas"
+  >
+    <p>
+      loading
+    </p>
+     
+  </div>
+</DocumentFragment>
+`;

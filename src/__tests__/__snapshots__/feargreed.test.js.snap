@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fear and greed section Renders consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="fear-greed"
+  >
+    <div
+      class="title"
+    >
+      <span>
+        Today's Cryptocurrency Fear And Greed Index
+      </span>
+    </div>
+    <div
+      class="fear-greed-title"
+    >
+      How high are we...
+    </div>
+    <div
+      class="fear-greed-number"
+    >
+      0
+    </div>
+    <div
+      class="fear-greed-title"
+    >
+      We're feeling...
+    </div>
+    <div
+      class="fear-greed-number"
+    >
+      Loading
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -38,12 +38,16 @@ describe('fear and greed section', () => {
     const { findByText } = render(<Databoard />);
     const result = await findByText('Trending On Coingecko');
     expect(result).toBeTruthy();
-  })
-
+  });
 
   it('Successfully fetches coin name', async () => {
     const { findByText } = render(<Databoard />);
     const result = await findByText('YIELD App')
     expect(result).toBeTruthy();
+  });
+
+  it('Renders consistently', async () => {
+    const { asFragment } = render(<Databoard />);
+    expect(asFragment()).toMatchSnapshot();
   })
 });

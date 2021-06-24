@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`news section Renders consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="news-parent"
+  >
+    <div
+      class="title"
+    >
+      <span>
+        News (Sourced From Messari)
+      </span>
+    </div>
+    <div
+      class="news-par"
+    />
+  </div>
+</DocumentFragment>
+`;

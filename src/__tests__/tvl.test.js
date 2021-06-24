@@ -23,6 +23,12 @@ jest.mock('axios', () => {
 
 
 describe('TVL section', () => {
+  it('Renders consistently', async () => {
+    const { asFragment } = render(<TVL/>);
+    expect(asFragment()).toMatchSnapshot();
+  })
+
+
   it('Successfully renders the TVL component', async () => {
     const { findByText } = render(<TVL/>);
     const result = await findByText('DeFi Protocol Total Value Locked');

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TVL section Renders consistently 1`] = `
+<DocumentFragment>
+  <div
+    class="tvl-parent"
+  >
+    <div
+      class="title"
+    >
+      <span>
+        DeFi Protocol Total Value Locked
+      </span>
+    </div>
+    <div
+      class="tvl-item-header"
+    >
+      <div
+        class="tvl1"
+      >
+        Procotol
+      </div>
+      <div
+        class="tvl2"
+      />
+      <div
+        class="tvl3"
+      >
+        TVL
+      </div>
+      <div
+        class="tvl4"
+      >
+        Daily % Cx
+      </div>
+      <div
+        class="tvl5"
+      />
+      <div
+        class="tvl6"
+      >
+        Escan
+      </div>
+    </div>
+    <div
+      class="tvl-data"
+    />
+  </div>
+</DocumentFragment>
+`;

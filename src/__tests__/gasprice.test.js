@@ -12,11 +12,17 @@ beforeEach(() => {
 
 
 describe('The Gas Price component', () => {
+  it('Renders consistently', async () => {
+    const { asFragment } = render(<GasPrice/>);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it('renders loading before connection', async () => {
     const { findByText } = render(<GasPrice/>);
     const result = await findByText('loading');
     expect(result).toBeTruthy();
   });
+
   it('renders the gas prices and then opens a websocket connection', async () => {
     render(<GasPrice/>);
     const connection = await ws.connected;
