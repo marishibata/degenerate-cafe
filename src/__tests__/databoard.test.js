@@ -33,8 +33,17 @@ jest.mock('axios', () => {
   }
 });
 
-test('Successfully fetches coin name', async () => {
-  const { findByText } = render(<Databoard />);
-  const result = await findByText('YIELD App')
-  expect(result).toBeTruthy();
-})
+describe('fear and greed section', () => {
+  it('Successfully renders the component', async () => {
+    const { findByText } = render(<Databoard />);
+    const result = await findByText('Trending On Coingecko');
+    expect(result).toBeTruthy();
+  })
+
+
+  it('Successfully fetches coin name', async () => {
+    const { findByText } = render(<Databoard />);
+    const result = await findByText('YIELD App')
+    expect(result).toBeTruthy();
+  })
+});

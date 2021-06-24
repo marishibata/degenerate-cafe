@@ -20,6 +20,12 @@ jest.mock('axios', () => {
 })
 
 describe('fear and greed section', () => {
+  it('Successfully renders the component to the screen', async () => {
+    const { findByText } = render(<FearGreed/>);
+    const result = await findByText("Today's Cryptocurrency Fear And Greed Index");
+    expect(result).toBeTruthy();
+  })
+
   it('Successfully fetches F&G index', async () => {
     const { findByText } = render(<FearGreed/>);
     const result = await findByText('Extreme Fear');

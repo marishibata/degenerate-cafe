@@ -28,6 +28,13 @@ jest.mock('axios', () => {
 
 
 describe('news section', () => {
+  it('Successfully renders news component', async () => {
+    const { findByText } = render(<News/>);
+    const result = await findByText('News (Sourced From Messari)');
+    expect(result).toBeTruthy();
+  })
+
+
   it('Successfully fetches news articles', async () => {
     const { findByText } = render(<News/>);
     const result = await findByText('Lorem ipsum')

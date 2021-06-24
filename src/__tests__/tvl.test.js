@@ -23,6 +23,12 @@ jest.mock('axios', () => {
 
 
 describe('TVL section', () => {
+  it('Successfully renders the TVL component', async () => {
+    const { findByText } = render(<TVL/>);
+    const result = await findByText('DeFi Protocol Total Value Locked');
+    expect(result).toBeTruthy();
+  })
+
   it('Successfully fetches TVL data', async () => {
     const { findByText } = render(<TVL/>);
     const result = await findByText('Uniswap');
